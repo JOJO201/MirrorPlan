@@ -1,0 +1,26 @@
+schema_version: 1
+status: frozen
+recorded_on: "2026-10-03 Australia/Melbourne"
+role: "Post-hoc matched-certification execution-order comparison"
+prior_outcomes_known: true
+exploratory_probe_known: "tmp/milp_cert_probe_20261002_results"
+source_protocol: "protocols/main.yaml"
+do_not_replace_frozen_primary_results: true
+runtime:
+  methods: ["bundle_greedy", "milp_exact", "certify_or_escalate", "milp_then_certify"]
+  warmups: 1
+  measured_repetitions: 7
+  method_order: "Rotate all four methods by event-quota pair and repetition"
+  input_boundary: "Same loaded in-memory preservation instance"
+  certified_output_boundary: "Returned plan after final integer audit"
+  plan_only_output_boundary: "Returned feasible plan"
+  exclusions: ["imports", "input loading", "network", "source graph construction", "proof serialization", "additional validation recheck"]
+  certificate_scale: 1000000000
+  node_limit: 100000
+  quality_gate: "All values agree with their retained method; both certified methods match the exact reference and pass the same checker"
+analysis:
+  unit: "Median of seven repetitions per event-quota-method combination"
+  population: "All 16 events and all five original quotas"
+  summaries: ["median", "p95", "maximum", "paired certified runtime ratio"]
+  quota_strata: "Report all five quotas; differences remain descriptive and post-hoc"
+  interpretation: "Execution-order trade-off, not an independent confirmatory experiment or an adaptive policy"

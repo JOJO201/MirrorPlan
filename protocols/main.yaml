@@ -1,0 +1,66 @@
+schema_version: 1
+status: frozen
+frozen_at_utc: "2026-07-16T05:30:39Z"
+study: "Budgeted preservation of declared model lineage under registry deletions"
+source:
+  repository: "https://github.com/MSC-empirical/msc-empirical"
+  commit: "0e719b8587e30f464f2e204127e844833efbe965"
+population:
+  events:
+    - "0319"
+    - "0326"
+    - "0402"
+    - "0409"
+    - "0416"
+    - "0423"
+    - "0430"
+    - "0507"
+    - "0514"
+    - "0521"
+    - "0528"
+    - "0604"
+    - "0611"
+    - "0618"
+    - "0625"
+    - "0702"
+  statistical_unit: "weekly deletion event"
+budgets:
+  kind: "fraction of relevant deleted prerequisites, rounded up"
+  fractions: [0.01, 0.05, 0.10, 0.20, 0.50]
+methods:
+  proposed: "factor_hybrid"
+  independent_oracle: "milp_exact"
+  deterministic_baselines:
+    - "bundle_greedy"
+    - "peeling"
+    - "impact"
+  stochastic_baseline: "random"
+  random_seeds: 50
+solver:
+  component_enumeration_limit: 22
+  milp_time_limit_seconds: 600
+outcomes:
+  primary: "fraction of affected surviving targets with complete declared ancestry"
+  secondary:
+    - "recovered target count"
+    - "optimality ratio"
+    - "wall-clock runtime"
+estimands:
+  primary_budget_fraction: 0.10
+  primary_contrast: "factor_hybrid minus impact, paired by event"
+  additional_contrasts:
+    - "factor_hybrid minus bundle_greedy"
+    - "factor_hybrid minus peeling"
+  uncertainty: "event bootstrap, 10000 resamples, percentile 95% interval"
+  bootstrap_seed: 20260716
+runtime:
+  warmups: 1
+  measured_repetitions: 7
+exclusions:
+  - "No event is excluded from the primary analysis."
+  - "A run is failed, not silently dropped, if source hashes or oracle values disagree."
+non_claims:
+  - "The observed deletion set is a perfect-alert retrospective condition."
+  - "Lineage reconstructibility is not runtime availability."
+  - "Cardinality budget is not repository storage cost."
+  - "The study does not infer causal effects of mirroring."

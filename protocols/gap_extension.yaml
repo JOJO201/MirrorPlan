@@ -1,0 +1,40 @@
+schema_version: 1
+status: frozen
+frozen_at_utc: "2026-07-16T08:42:16Z"
+role: "post-main exploratory alert-capacity-allocation gap analysis"
+question: "Under incomplete alerts, how much unrecovered lineage is attributable to alert omissions, finite mirror capacity, and heuristic allocation?"
+source_protocols:
+  - "protocols/main.yaml"
+  - "protocols/alert_stress.yaml"
+design_disclosure: "The three-gap decomposition and the 10% alert-stress outcomes were inspected before this broader grid was frozen; results are descriptive post-hoc evidence."
+events: ["0319", "0326", "0402", "0409", "0416", "0423", "0430", "0507", "0514", "0521", "0528", "0604", "0611", "0618", "0625", "0702"]
+budget_fractions: [0.01, 0.05, 0.10, 0.20, 0.50]
+alert_recall: [0.50, 0.70, 0.90, 1.00]
+mechanisms:
+  uniform:
+    seeds: 100
+    definition: "sample true deleted candidates uniformly without replacement"
+  owner_clustered:
+    seeds: 100
+    definition: "randomly order repository owners and miss owner groups until the fixed miss count is reached"
+  impact_targeted:
+    seeds: 1
+    definition: "miss candidates in descending individual descendant-impact order"
+methods:
+  exact: "milp_exact on the alert-restricted instance"
+  deployed: "bundle_greedy on the same alert-restricted instance"
+decomposition:
+  alert_gap: "all affected weight minus the weight whose complete requirement set is alerted"
+  capacity_gap: "alert-recoverable weight minus the exact value at the fixed original-candidate budget"
+  allocation_gap: "exact value minus Bundle value"
+  identity: "alert_gap + capacity_gap + allocation_gap + Bundle value equals all affected weight"
+uncertainty: "event-level bootstrap after averaging seeds within event, 10000 resamples, percentile 95% interval"
+bootstrap_seed: 20260716
+completeness_gate:
+  expected_rows: 64320
+  require_exact_decomposition_identity: true
+  require_exact_to_dominate_bundle: true
+non_claims:
+  - "This is not a learned or prospective deletion-alert evaluation."
+  - "Impact-targeted misses are a deterministic severe stress case, not an exact adversarial optimum."
+  - "Gap shares describe this historical window and are not causal effects of interventions."

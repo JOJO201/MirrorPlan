@@ -1,0 +1,194 @@
+[
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0312.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0312.csv",
+    "bytes": 80617464,
+    "sha256": "aff5f885c2ca1d951e71f9aca3a048272a2383375656a840ddec0849a46cf7f8"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0319.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0319.csv",
+    "bytes": 213265,
+    "sha256": "1c51aa97cb0facbfe00120ebdcbe6b94621de82a90d0a9f7cb3f5c0a3f839b6f"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0319.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0319.csv",
+    "bytes": 81818571,
+    "sha256": "6720dba45c1c7a34bc74529654fa6c742726f1e998cbcad3c3b8b1c7d35dbe02"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0326.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0326.csv",
+    "bytes": 203896,
+    "sha256": "a07213b8003a36c3578fe287c614c56ee2be165319e2ecd3d21333d118be18f2"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0326.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0326.csv",
+    "bytes": 83232766,
+    "sha256": "16d515b3607efac486369216d8df8b0d07c5a89b58aa6b555f0066a6de76b240"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0402.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0402.csv",
+    "bytes": 484774,
+    "sha256": "625cfa8b1547fba71931adf54d31c8dd31ae13d1a41a5febe0d397087ecefd1b"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0402.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0402.csv",
+    "bytes": 84462737,
+    "sha256": "63b7b87f8a71312de3833155163b5d898cb102324f8b743dcc64e42fc87e0606"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0409.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0409.csv",
+    "bytes": 181598,
+    "sha256": "46b71b806ff65fc9fca58835bbabd403007d0215213627bf8ab272d778b4562c"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0409.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0409.csv",
+    "bytes": 86169797,
+    "sha256": "2ba71842f47097c7604e91142c735897477c78e8c667406707a17e864151a488"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0416.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0416.csv",
+    "bytes": 202050,
+    "sha256": "c691676dd0b570ab0973d73f7ea51901777daa7b62c5ee90584d84d3b0f3b3ad"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0416.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0416.csv",
+    "bytes": 87550295,
+    "sha256": "f7afce85289fcc4d0359ccb38f09cf0b8934f63bb61e0562fa23fefeee8a5d94"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0423.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0423.csv",
+    "bytes": 212841,
+    "sha256": "264d5ccfbd0605ab55c43d3c4e15de3e93f4cbc6281b5736a6c98c961ce43597"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0423.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0423.csv",
+    "bytes": 88901284,
+    "sha256": "505530a1234b7b2062873010b1ee6904d2a633c614aaf7ea0252bff4f229f2a8"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0430.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0430.csv",
+    "bytes": 200632,
+    "sha256": "68253461a939458befcc8aede245db939d79a5573cdefa2ddb25f45dd2ad13ce"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0430.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0430.csv",
+    "bytes": 90406777,
+    "sha256": "a361ae987fa7def6343b3021065302d5368423a117bdd40c8c645fcbe42f99d1"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0507.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0507.csv",
+    "bytes": 1345757,
+    "sha256": "2b9dc7c0588bf7d533395565d7e94362d86af75642ee9f289636089c4bea227a"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0507.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0507.csv",
+    "bytes": 90868727,
+    "sha256": "061c0936b442b67071e33f140ec15dc761d881bb84450521f1f8298f411831a8"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0514.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0514.csv",
+    "bytes": 198998,
+    "sha256": "0c3cab7d3b37391f4ac181034e23a69f8be16de6bafb384d9a1238f97356febe"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0514.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0514.csv",
+    "bytes": 92155701,
+    "sha256": "bf9d842a52411a1749716cda51e0b93808e840b98933bf08f45fa5c2416f4b42"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0521.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0521.csv",
+    "bytes": 243540,
+    "sha256": "e8a5852cd0ecbb1688529e0850037f981a86f81c32308a52cb709f16cf083b03"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0521.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0521.csv",
+    "bytes": 93877088,
+    "sha256": "f6df12d517a4d99de2d01d8e21f92ae110f942de8b15bcb8aedc20d96d2663de"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0528.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0528.csv",
+    "bytes": 336479,
+    "sha256": "52fece6c0335541c5ab543bbe568633a1335e5d673e40e7c1468180469dc7111"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0528.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0528.csv",
+    "bytes": 94966733,
+    "sha256": "16489a3c348967c4e40d67cff7c6a16e64a0ee01d3eae5865884e829fa3b95c3"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0604.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0604.csv",
+    "bytes": 261173,
+    "sha256": "ab609a311f7b10233cc8ae3f26cb72cc62f2359a768af00e400d41a6ce934ee1"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0604.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0604.csv",
+    "bytes": 96215367,
+    "sha256": "391537e79d85628141394d57dd2d6fdb3d1d17813676467c1d02e9ad068e818a"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0611.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0611.csv",
+    "bytes": 508815,
+    "sha256": "ab6dfd3758e3c75cd615b80ef17b2dbb658c32803e84099c5db8153f61cc3a49"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0611.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0611.csv",
+    "bytes": 97019932,
+    "sha256": "2d593f220de9a071a844a740af7ce76f9841d7f48466fda59504d707a300340b"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0618.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0618.csv",
+    "bytes": 222044,
+    "sha256": "bc582385dec34f1dfccf3dd1490ca630e2b503ed65d21458ee1ec43cbefa949c"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0618.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0618.csv",
+    "bytes": 98901127,
+    "sha256": "9bc8cf9af7e75dfb588756f2cf10342dfe26d916009c05d30e2a942752e8ebc3"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0625.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0625.csv",
+    "bytes": 148201,
+    "sha256": "4b097852dd7c19e743a1b95c4b5b2680e6a75c8c56614fc478a87933cc035488"
+  },
+  {
+    "relative_path": "data/raw/model_relation/batch_all_0625.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/model_relation/batch_all_0625.csv",
+    "bytes": 99115516,
+    "sha256": "032b4753faa6eaea462b7a433d9fca63e6f77b2fc12925737ba983872317562d"
+  },
+  {
+    "relative_path": "data/raw/deleted_models/deleted_model_0702.csv",
+    "url": "https://raw.githubusercontent.com/MSC-empirical/msc-empirical/0e719b8587e30f464f2e204127e844833efbe965/data/deleted_models/deleted_model_0702.csv",
+    "bytes": 134030,
+    "sha256": "9b463541b61d6a3d277abe16a6501b171da554740659435086fc8c3b1525551c"
+  }
+]

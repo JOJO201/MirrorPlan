@@ -1,0 +1,26 @@
+schema_version: 1
+status: frozen
+recorded_on: "2026-10-01 Australia/Melbourne"
+role: "Post-review measurement and descriptive reanalysis"
+prior_outcomes_known: true
+source_protocol: "protocols/main.yaml"
+do_not_replace_frozen_primary_results: true
+runtime:
+  input_boundary: "Loaded in-memory preservation instance"
+  output_boundary: "Returned plan and completed integer audit"
+  exclusions: ["imports", "network access", "source graph construction", "proof serialization"]
+  separately_measure: "Encoded-instance loading"
+  methods: ["bundle_greedy", "milp_exact", "certify_or_escalate"]
+  warmups: 1
+  measured_repetitions: 7
+  method_order: "Rotate three methods by repetition"
+  certificate_scale: 1000000000
+  node_limit: 100000
+  quality_gate: "Every measured objective agrees with the retained corresponding method value"
+analysis:
+  primary_quota: 0.10
+  exclusions: ["0507", "each event in turn"]
+  bootstrap_seed: 20260716
+  bootstrap_repetitions: 10000
+  cases: "All four retained non-Bundle-root closures"
+  interpretation: "Descriptive sensitivity, not independent confirmation or deployment evidence"

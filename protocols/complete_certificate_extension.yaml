@@ -1,0 +1,32 @@
+schema_version: 1
+status: frozen
+frozen_at_utc: "2026-07-16T09:17:21Z"
+role: "post-main exploratory complete proof-closure extension"
+question: "Can every frozen exact objective be independently verified by root or branch charge certificates?"
+source_protocols:
+  - "protocols/main.yaml"
+  - "protocols/certificate_extension.yaml"
+design_disclosure: "The 76 direct Bundle closures, the four escalated objective values, and the root fractional patterns of the two remaining integrality-gap cases were inspected before this protocol was frozen. Certificate sizes and final branch-tree outcomes were not inspected. All evidence is descriptive post-hoc."
+events: ["0319", "0326", "0402", "0409", "0416", "0423", "0430", "0507", "0514", "0521", "0528", "0604", "0611", "0618", "0625", "0702"]
+budget_fractions: [0.01, 0.05, 0.10, 0.20, 0.50]
+certificate_scale: 1000000000
+cascade:
+  - "Audit Bundle with one optimized root charge bound."
+  - "If open, call global MILP and audit its returned plan with the same root charge bound."
+  - "If an LP integrality gap remains, recursively branch on the undecided natural-LP variable closest to 0.5, breaking ties lexicographically, and close every leaf with a quantized charge bound."
+branch_semantics: "Each include/exclude branch partitions all feasible plans consistent with the path; a leaf is closed when floor(constant completed value plus residual charge upper bound) is no larger than the incumbent."
+node_limit: 100000
+metrics:
+  - "proof stage: Bundle root, exact root, or branch charge"
+  - "branch nodes, leaves, and maximum depth"
+  - "compressed proof bytes and integer verification time"
+trusted_chain: "The final verifier reconstructs every residual problem and checks plan feasibility, branch coverage, charge conservation, and leaf bounds using Python standard-library integer arithmetic; LP and MILP outputs are not trusted for proof validity."
+completeness_gate:
+  expected_event_budget_pairs: 80
+  require_every_proof_to_verify: true
+  require_every_verified_lower_to_match_frozen_exact: true
+non_claims:
+  - "General branch-and-bound proof logging and LP duality are not new."
+  - "The contribution is a compact BLP-specific charge proof and its empirical closure behavior."
+  - "Proof size on these 80 pairs is not a worst-case polynomial bound."
+  - "All results follow exploratory inspection and are not confirmatory."

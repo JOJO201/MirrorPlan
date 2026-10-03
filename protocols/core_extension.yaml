@@ -1,0 +1,22 @@
+schema_version: 1
+status: frozen
+frozen_at_utc: "2026-07-16T08:30:00Z"
+role: "post-main exact-algorithm extension"
+question: "Can the additive singleton-only tail be removed losslessly so exact optimization depends on the multi-ancestor complementarity core?"
+source_protocol: "protocols/main.yaml"
+events: ["0319", "0326", "0402", "0409", "0416", "0423", "0430", "0507", "0514", "0521", "0528", "0604", "0611", "0618", "0625", "0702"]
+budget_fractions: [0.01, 0.05, 0.10, 0.20, 0.50]
+methods: ["core_factor", "factor_hybrid", "milp_exact"]
+component_enumeration_limit: 22
+runtime:
+  warmups: 1
+  measured_repetitions: 7
+correctness_gate: "all three objective values agree on every event-budget pair and repetition"
+reported_structure:
+  - "core candidates per event"
+  - "singleton-only tail candidates per event"
+  - "number and maximum size of core components"
+non_claims:
+  - "The extension does not change the frozen primary estimand or its outcomes."
+  - "CoreFactor is an exact structural decomposition, not a new approximation guarantee."
+  - "Runtime comparisons are descriptive on one machine."

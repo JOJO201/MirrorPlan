@@ -1,0 +1,32 @@
+schema_version: 1
+status: frozen
+frozen_at_utc: "2026-07-16T08:42:16Z"
+role: "post-main exploratory certifying-optimization extension"
+question: "Can a solver-independent charge certificate verify Bundle's quality or optimality before escalating to an exact integer solver?"
+source_protocol: "protocols/main.yaml"
+design_disclosure: "The charge construction and preliminary tightness were inspected on the complete benchmark before this protocol was frozen; all outcomes are therefore descriptive post-hoc evidence, not confirmatory evidence."
+events: ["0319", "0326", "0402", "0409", "0416", "0423", "0430", "0507", "0514", "0521", "0528", "0604", "0611", "0618", "0625", "0702"]
+budget_fractions: [0.01, 0.05, 0.10, 0.20, 0.50]
+lower_bound_method: "bundle_greedy"
+upper_bound_methods:
+  equal_charge:
+    definition: "divide each requirement-group weight equally among its members"
+  optimized_charge:
+    definition: "minimize the sum of the B largest candidate loads through the dual linear program"
+certificate_scale: 1000000000
+rounding: "round nonnegative LP charges upward to integer certificate units, repair any group deficit exactly, and verify with integer arithmetic"
+escalation_rule: "declare the Bundle plan optimal when its integer objective equals floor(optimized_charge_upper_bound); otherwise invoke the independent global MILP"
+metrics:
+  - "verified lower-to-upper certificate ratio"
+  - "number of Bundle plans certified globally optimal without MILP"
+  - "number of event-budget pairs escalated to MILP"
+  - "objective agreement between escalated MILP and the retained frozen exact result"
+trusted_chain: "certificate verifier uses Python standard-library integer arithmetic and the compact instance; LP optimality is not trusted for certificate validity"
+completeness_gate:
+  expected_event_budget_pairs: 80
+  require_every_certificate_to_verify: true
+  require_escalated_values_to_match_frozen_exact: true
+non_claims:
+  - "The natural LP relaxation and its dual are not claimed as new general optimization machinery."
+  - "Observed certificate tightness is an empirical property of this benchmark, not a worst-case approximation guarantee."
+  - "Because the protocol follows exploratory inspection, no statistical significance claim is attached to the certificate counts."

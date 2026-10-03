@@ -1,0 +1,15 @@
+schema_version: 1
+status: frozen
+frozen_at_utc: "2026-07-16T05:33:32Z"
+role: "post-main robustness sensitivity"
+question: "How does allocation degrade when a deletion alert misses relevant prerequisites?"
+events: ["0319", "0326", "0402", "0409", "0416", "0423", "0430", "0507", "0514", "0521", "0528", "0604", "0611", "0618", "0625", "0702"]
+alert_recall: [0.50, 0.70, 0.90, 1.00]
+budget_fraction_of_original_candidates: 0.10
+seeds: 100
+method: "milp_exact"
+metric: "fraction of all affected targets restored"
+uncertainty: "event-level bootstrap after averaging alert seeds"
+non_claims:
+  - "Missed candidates are sampled uniformly, not by a learned alert model."
+  - "The analysis covers false negatives, not false positives or calibration."

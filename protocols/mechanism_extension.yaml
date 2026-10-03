@@ -1,0 +1,22 @@
+schema_version: 1
+status: frozen
+frozen_at_utc: "2026-07-16T09:20:00Z"
+role: "post-main exploratory mechanism ablation"
+question: "Does the complementarity core materially change selected plans and recovered value?"
+source_protocol: "protocols/main.yaml"
+events: ["0319", "0326", "0402", "0409", "0416", "0423", "0430", "0507", "0514", "0521", "0528", "0604", "0611", "0618", "0625", "0702"]
+budget_fractions: [0.01, 0.05, 0.10, 0.20, 0.50]
+exact_selection_source: "factor_hybrid selections retained by the frozen main run"
+ablation:
+  name: "additive_ablation"
+  definition: "remove all non-singleton requirement rewards, select candidates by remaining singleton weight, break ties lexicographically, then evaluate the selected set on the full objective"
+metrics:
+  - "fraction of exact-plan budget assigned to complementarity-core candidates"
+  - "fraction of exact-plan recovered value contributed by non-singleton requirements"
+  - "paired full-objective recovery gain over additive_ablation"
+uncertainty: "event bootstrap, 10000 resamples, percentile 95% interval"
+bootstrap_seed: 20260716
+non_claims:
+  - "This is an exploratory mechanism ablation, not the preregistered primary contrast."
+  - "Core budget share describes one deterministic certified optimum and need not be unique across all optimal selections."
+  - "The ablation is diagnostic, not presented as a competitive state-of-the-art baseline."
